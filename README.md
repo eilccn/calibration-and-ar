@@ -14,3 +14,5 @@ Instructions for running your executables:
 4. Run the program by entering "./project4" 
 
 
+# Khoury Wiki
+
