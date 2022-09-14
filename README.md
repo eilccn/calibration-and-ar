@@ -20,13 +20,16 @@ For this project we implemented a program that can calibrate a camera and then u
 ## Program Features
 
 ### Detecting and Extracting Chessboard Corners
-<src img="/readme-images/chessboard-corners.png" alt="chessboard">
+
+<img src="/readme-images/chessboard-corners.png" alt="chessboard">
 
 ### Camera Calibration
-<src img="/readme-images/calibration.png" alt="calibration">
+
+<img src="/readme-images/calibration.png" alt="calibration">
 
 ### Calculating Current Position of the Camera
-<src img="/readme-images/camera-position.png" alt="position">
+
+<img src="/readme-images/camera-position.png" alt="position">
 
 ### Projecting 3D Axes
 
