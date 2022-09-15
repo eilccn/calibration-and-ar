@@ -59,5 +59,8 @@ Description: Harris corner detection grayscale (left) and harris corner detectio
 <img src="/readme-images/harris-corners.jpeg" width=50%>
 To further elaborate on why corner detection is effective for patch mapping, we can take a look at the image above. In a "flat region" there is no gradient change observed in either direction. In an "edge" there is no change along the edge direction. Only in a corner we are able to observe gradient changes in all directions regardless of translation, rotation, and the lighting situation.
 
+## Notes
+A feature for detecting Aruco markers is included in this program, but is not discussed because it has not yet been tested sufficiently enough. 
+
 ###### Khoury Wiki
 https://wiki.khoury.northeastern.edu/x/R9l5Bg
