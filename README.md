@@ -31,7 +31,7 @@ a = detect arcuo markers
 ### Detecting and Extracting Chessboard Corners
 
 <img src="/readme-images/chessboard-corners.png" width=50%>
-Description: Calibration image with chessboard corners highlighted. The functions <a href="https://docs.opencv.org/3.4/d9/d0c/group__calib3d.html#ga93efa9b0aa890de240ca32b11253dd4a" target="_blank">findChessboardCorners>, <a href="https://docs.opencv.org/4.x/dd/d1a/group__imgproc__feature.html#ga354e0d7c86d0d9da75de9b9701a9a87e" target="_blank">cornerSubPix>, and <a href="https://docs.opencv.org/3.4/d9/d0c/group__calib3d.html#ga6a10b0bb120c4907e5eabbcd22319022" target="_blank">drawChessboardCorners> were used in order to detect, extract, and draw the chessboard corners. The user then captures a set of images and saves the corner locations and 3D world points from each image via the 's' keypress functionality. 
+Description: Calibration image with chessboard corners highlighted. The functions <a href="https://docs.opencv.org/3.4/d9/d0c/group__calib3d.html#ga93efa9b0aa890de240ca32b11253dd4a" target="_blank">findChessboardCorners</a>, <a href="https://docs.opencv.org/4.x/dd/d1a/group__imgproc__feature.html#ga354e0d7c86d0d9da75de9b9701a9a87e" target="_blank">cornerSubPix</a>, and <a href="https://docs.opencv.org/3.4/d9/d0c/group__calib3d.html#ga6a10b0bb120c4907e5eabbcd22319022" target="_blank">drawChessboardCorners</a> were used in order to detect, extract, and draw the chessboard corners. The user then captures a set of images and saves the corner locations and 3D world points from each image via the 's' keypress functionality. 
 
 ### Camera Calibration and Selecting Calibration Images
 
