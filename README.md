@@ -39,14 +39,19 @@ Description: Calibration image with chessboard corners highlighted. The function
 Description: Upon obtaining the chessboard corners and 3D world points of at least 5 images, we can run camera calibration via <a href="https://docs.opencv.org/3.4/d9/d0c/group__calib3d.html#ga3207604e4b1a1758aa66acb6ed5aa65d" target="_blank">cv::calibrateCamera</a>. After calibration, the camera saves the intrinsic parameters, the camera matrix, and distance coefficient data, to a file to be read for later AR functionalities. It also prints out the camera matrix and distortion coefficients to the terminal, along with the final re-projection error. An optimal reprojection error is as close to 0 as possible.
 
 ### Calculating Current Position of the Camera
-
 <img src="/readme-images/camera-position.png" width=50%>
 
 ### Projecting 3D Axes
+<img src="/readme-images/3d-axis.png" width=50%>
 
 ### Creating a Virtual Object
 
+
 ### Detecting Robust Features
+| Greyscale | Without Greyscale |
+|---|---|
+| <img src="/readme-images/harris-corners-1.png" width=50%> | <img src="/readme-images/harris-corners-2.png" width=50%> |
+| <video src="/readme-images/harris-corners-vid1.mov" width=50%> | <video src="/readme-images/harris-corners-vid2.mov" width=50%> |
 
 
 ###### Khoury Wiki
