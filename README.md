@@ -11,7 +11,16 @@ For this project we implemented a program that can calibrate a camera and then u
 
 ### Keypress Definitions
 ```
-
+q = quit
+s = save image as .png
+c = calibrate camera
+spacebar = compute current position of camera
+f = stop computing current position of camera
+x = draw chessboard corners
+d = draw 3D axes
+o = draw 3D virtual object
+r = detect robust features (harris corners)
+a = detect arcuo markers
 ```
 
 ### Video Capture Set-Up
