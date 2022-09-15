@@ -1,7 +1,9 @@
 # Calibration and Augmented Reality
 
 ## Project Description
-For this project we implemented a program that can calibrate a camera and then use the calibration data in order to generate virtual objects in a scene. The final program has the ability to detect a target point and then place a virtual object in the scene relative to the target. As a result, the virtual object will be capable of orienting itself according to the location and movements of the camera (or target). In this specific implementation we are using a 9x6 checkerboard checkerboard.png  as a target and means of camera calibration. 
+This program implements camera calibration then uses the calibration data in order to generate virtual objects within a scene. It has the ability to detect a target point and then place a virtual object in the scene relative to the target. As a result, the virtual object will be capable of orienting itself according to the location and movements of the camera (or target). A 9x6 checkerboard (below) is used as a target and means of camera calibration. 
+
+<img src="/readme-images/checkerboard.png" width=50%>
 
 ## Instructions for running executables:
 1. Place all .cpp and .h files along with a CMakeLists.txt file into a directory (i.e. called "project4")
