@@ -40,9 +40,11 @@ Description: Upon obtaining the chessboard corners and 3D world points of at lea
 
 ### Calculating Current Position of the Camera
 <img src="/readme-images/camera-position.png" width=50%>
+Description: The rotation (R) and translation (T) values are obtained from the <a href="https://docs.opencv.org/3.4/d9/d0c/group__calib3d.html#ga549c2075fac14829ff4a58bc931c033d" target="_blank">solvePNP</a> function. The camera calibration parameters that were previously saved into a file, then starts a video loop. For each frame, it tries to detect a chessboard. If found, it grabs the locations of the corners and points. It then populates the points, corners, camera matrix, distance coefficients, rotation values (an output value initialized as a cv::Mat), and translation values (an output value initialized as a cv::Mat) into the function solvePnP to obtain the board's pose (rotation and translation).
 
 ### Projecting 3D Axes
 <img src="/readme-images/3d-axis.png" width=50%>
+Description: 
 
 ### Creating a Virtual Object
 
