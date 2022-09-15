@@ -44,17 +44,20 @@ Description: The rotation (R) and translation (T) values are obtained from the <
 
 ### Projecting 3D Axes
 <img src="/readme-images/3d-axis.png" width=50%>
-Description: 3D axes on the board drawn from a point on the board using drawFrameAxes. In the real-time feed I have to angle the board certain ways in order for the axes to align correctly. I think this has to do with the fact that I may have taken a lot of similar images from only a handful of angles. If I were to take better calibration images and take a lot more calibration images, the axes would show up more accurately.
+Description: 3D axes on the board are drawn from a point on the board using <a href="https://docs.opencv.org/3.4/d9/d0c/group__calib3d.html#gab3ab7bb2bdfe7d5d9745bb92d13f9564" target="_blank">drawFrameAxes</a>. 
 
 ### Creating a Virtual Object
-
+A virtual object in 3D world space will be drawn with lines connecting various points set in 3D space.
 
 ### Detecting Robust Features
 | Greyscale | Without Greyscale |
 |---|---|
 | <img src="/readme-images/harris-corners-1.png" width=100%> | <img src="/readme-images/harris-corners-2.png" width=100%> |
 
-Description: Description: Harris corner detection grayscale (left) and harris corner detection without grayscale (right). Note: I simply took the grayscale filter off for the second image so the method for finding the corners is the same for both images. Corners are the intersection of two edges, which means that a corner is a point in which the directions of two edges change. In other words, the gradient of an image in the directions of both edges have a high variation, which can be used to detect a corner. The corner feature points extracted from harris corner detection are useful for implementing augmented reality because they are effective in patch mapping. Corners are also known as interest points, meaning that they are translation, rotation, and illumination invariant. To further elaborate on why corner detection is effective for patch mapping, we can take a look at the image above. In a "flat region" there is no gradient change observed in either direction. In an "edge" there is no change along the edge direction. Only in a corner we are able to observe gradient changes in all directions regardless of translation, rotation, and the lighting situation.
+Description: Harris corner detection grayscale (left) and harris corner detection without grayscale (right). I simply took the grayscale filter off for the second image, and there is no difference in the actual method for finding the corners in both image outputs. Corners are the intersection of two edges, which means that a corner is a point in which the directions of two edges change. In other words, the gradient of an image in the directions of both edges have a high variation, which can be used to detect a corner. The corner feature points extracted from harris corner detection are useful for implementing augmented reality because they are effective in patch mapping. Corners are also known as interest points, meaning that they are translation, rotation, and illumination invariant. 
+
+<img src="/readme-images/harris-corners.jpeg" width=50%>
+To further elaborate on why corner detection is effective for patch mapping, we can take a look at the image above. In a "flat region" there is no gradient change observed in either direction. In an "edge" there is no change along the edge direction. Only in a corner we are able to observe gradient changes in all directions regardless of translation, rotation, and the lighting situation.
 
 ###### Khoury Wiki
 https://wiki.khoury.northeastern.edu/x/R9l5Bg
