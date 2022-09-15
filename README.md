@@ -44,7 +44,7 @@ Description: The rotation (R) and translation (T) values are obtained from the <
 
 ### Projecting 3D Axes
 <img src="/readme-images/3d-axis.png" width=50%>
-Description: 
+Description: 3D axes on the board drawn from a point on the board using drawFrameAxes. In the real-time feed I have to angle the board certain ways in order for the axes to align correctly. I think this has to do with the fact that I may have taken a lot of similar images from only a handful of angles. If I were to take better calibration images and take a lot more calibration images, the axes would show up more accurately.
 
 ### Creating a Virtual Object
 
@@ -53,7 +53,6 @@ Description:
 | Greyscale | Without Greyscale |
 |---|---|
 | <img src="/readme-images/harris-corners-1.png" width=50%> | <img src="/readme-images/harris-corners-2.png" width=50%> |
-| <video src="/readme-images/harris-corners-vid1.mov" width=50%> | <video src="/readme-images/harris-corners-vid2.mov" width=50%> |
 
 
 ###### Khoury Wiki
